@@ -1,3 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Frank's JAMstack site"
+
+[params]
+  homeText = "Hugo, Sass, Bootstrap"

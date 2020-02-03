@@ -1,0 +1,4 @@
+---
+title: "pricing"
+slug: "pricing"
+---
