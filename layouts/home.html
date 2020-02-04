@@ -3,7 +3,7 @@
 {{ partial "head" . }}
 <body>
     <div class="container">
-        <h1 class="text-primary mt-5">Homepage Template</h1>
+        <h1 class="mt-5">Homepage Template</h1>
     <ul>
         {{ range .Pages }}
         <li class="nav-li-{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Title}}</a></li>
