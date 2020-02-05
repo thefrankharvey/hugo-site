@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head" . }}
-<body>
-    <div class="container">
-        <h1 class="mt-5">Homepage Template</h1>
-    <ul>
-        {{ range .Pages }}
-        <li class="nav-li-{{ .Params.title }}"><a href="{{ .Permalink }}">{{ .Title}}</a></li>
-        {{ end }}
-    </ul>
-      </div>
-      <script src="script.js"></script>
 
+<body>
+    {{ partial "sidenav" . }}
+    <!-- div will need to be sticky -->
+    <div onclick="openNav()">open</div>
+
+    <div id="main" class="container-fluid">
+        <div class="row content">
+            <div class="row row-1">
+                <div class="col-md-5 cta-container">
+                    <h4>Modern monitoring & analytics</h4>
+                    <p>See inside any stack, any app, at any scale, anywhere.</p>
+                    <div class="cta-btn">cta</div>
+                </div>
+                <div class="col-md-7 cards-container">
+                    <h4>Modern monitoring & analytics</h4>
+                    <p>See inside any stack, any app, at any scale, anywhere.</p>
+                    <div class="cta-btn">cta</div>
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="col-sm-6">
+                    <div class="apm">
+                        <h4>APM</h4>
+                        <p>Get full visibility into modern applications</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="infrastructure">
+                        <h4>Infrastructure</h4>
+                        <p>See across systems, apps, and services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-3">
+                <div class="col-sm-6">
+                    <div class="loss-management">
+                        <h4>Loss Management</h4>
+                        <p>Analyze and explore lo! data in context</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="observability">
+                        <h4>Observability</h4>
+                        <p>With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-4">
+                <div class="col-sm-6">
+                    <div class="brand-mosaic">
+                        <h4>AdRoll</h4>
+                        <p>“Datadog! has been instrumental in mana!in! our real-time infrastructure, !lobally distributed in 5 data centers across hundreds of instances, and thousands of different metrics and dimensions for each host. I can't believe there was a time when we didn't have Datadog!.” Valentino Volon"hi CHIEF TECHNOLOGY OFFICE#</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100px";
+            document.getElementById("main").style.marginLeft = "100px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        </script>
+    <!-- <script src="scripts.js"></script> -->
 </body>
 
 </html>

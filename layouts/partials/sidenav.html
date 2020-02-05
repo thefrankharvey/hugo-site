@@ -1,0 +1,16 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="logo-container">
+        <img src="img/datadog-logo-white.png" alt="" class="logo">
+    </div>
+    <ul class='nav-list'>
+        {{ range .Pages }}
+        {{if ne .Params.title "login"}}
+        <li class="nav-li-{{ .Params.title }} uppercase"><a href="{{ .Permalink }}">{{ .Title}}</a></li>
+        {{ end }}
+        {{if eq .Params.title "login"}}
+        <li class="nav-li-{{ .Params.title }} capitalize"><a href="{{ .Permalink }}">{{ .Title}}</a></li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</div>
