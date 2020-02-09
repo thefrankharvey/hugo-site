@@ -1,3 +1,5 @@
+$brand-purple: #632ca6;
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -5,6 +7,9 @@ body {
 .row {
   width: 100%;
   margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+
 }
 /* side navigation */
 .sidenav {
@@ -14,7 +19,7 @@ body {
   z-index: 1;
   top: 0; 
   left: 0;
-  background-color: #632ca6; 
+  background-color: $brand-purple; 
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
@@ -110,40 +115,151 @@ body {
   position: absolute;
   top: 0;
   right: 5px;
-  font-size: 36px;
+  font-size: 30px;
   display: block;
 }
 
+ .arrow-right {
+  position:fixed;
+    top:0;
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid $brand-purple;
+    opacity: 0.75;
+ }
 /* main content */
 #main {
   transition: margin-left 0.5s;
   padding-left: 75px;
+  padding-top: 10px;
   margin-left: 115px;
-  width: calc(100% - 90px)
+  width: auto;
 }
 
+/* row 1 */
 .row-1 {
   border: 1px solid red;
   min-height: 400px;
 }
 
+.cta-container {  
+  margin-bottom: 25px;
+ }
+
+.copy-container {
+  height:50%;
+}
+
+.cta-container .headline {
+ line-height: 1em;
+}
+
+.cta-container .sub-headline {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.btn-container {
+  display:flex;
+  flex-flow: column nowrap;
+  height: 46%;
+}
+
+.cta-btn {
+  display: flex;
+  border: 3px solid $brand-purple;
+  justify-content: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: $brand-purple;
+  margin-top: auto;
+}
+
+.cards-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.price-card {
+  display:flex;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+  border: 1px solid darkgray;
+  padding: 20px;
+  flex:1
+}
+
+.price-card .title {
+  font-size: 10px;
+    letter-spacing: 0.0535em;
+   color: $brand-purple;
+   font-weight: 700;
+}
+
+
+/* row 2 */
+
+// .details, 
+// .bullets, 
+// .desctiption,
+// .starting {
+//   font-size: 14px;
+// }
+
+// .description, 
+// .price-caption, 
+// .starting,
+// .title {
+//   margin-bottom: 15px;
+// }
+// .starting {
+//   margin-bottom: 10px;
+// }
+
+// .price-caption {
+//   font-size: 11px;
+// }
+
+// .dollars {
+//   font-size: 35px;
+//     font-weight: 700;
+// }
+
+/* row 2 */
 .row-2 {
   border: 1px solid red;
   min-height: 200px;
 }
 
+/* row 3 */
 .row-3 {
   border: 1px solid red;
   min-height: 200px;
 }
 
+.adroll-image-container {
+  width:200px; 
+  height:200px; 
+  background-image: url('img/logo-grid-6.svg');
+  background-position: contain;
+  background-size: cover;
+}
+
+/* row 4 */
 .row-4 {
   border: 1px solid red;
   min-height: 200px;
 }
 
 /* media queries */
-@media only screen and (min-device-width: 568px) {
+@media only screen and (min-device-width: 768px) {
   .sidenav .closebtn {
     display: none;
   }
@@ -151,4 +267,27 @@ body {
   .sidenav {
     padding-top: 30px; 
   }
+
+  #main {
+    padding-top: 30px;
+  }
+
+  .cta-container {
+    margin-bottom: 0px;
+   }
 }
+
+@media only screen and (min-device-width: 992px) {
+  #main {
+    width: calc(100% - 140px);
+  }
+
+  .cards-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+

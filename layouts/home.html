@@ -5,41 +5,111 @@
 <body>
     {{ partial "sidenav" . }}
     <!-- div will need to be sticky -->
-    <div onclick="openNav()">open</div>
+    <div class="arrow-right" onclick="expandNav()"></div>
 
     <div id="main" class="container-fluid">
         <div class="row content">
             <div class="row row-1">
                 <div class="col-md-5 cta-container">
-                    <h4>Modern monitoring & analytics</h4>
-                    <p>See inside any stack, any app, at any scale, anywhere.</p>
-                    <div class="cta-btn">cta</div>
+                    <div class="copy-container">
+                        <h1 class="headline">Modern monitoring & analytics</h1>
+                        <p class="sub-headline">See inside any stack, any app, at any scale, anywhere.</p>
+                    </div>
+                    <div class="btn-container" >
+                        <div class="cta-btn">
+                            TRY FREE
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="col-md-7 cards-container">
-                    <h4>Modern monitoring & analytics</h4>
-                    <p>See inside any stack, any app, at any scale, anywhere.</p>
-                    <div class="cta-btn">cta</div>
+                    <!-- <div class="price-card">
+                        <div class="title">INFRASTRUCTRE</div>
+                        <div class="price">
+                             
+                            
+                    </div> -->
+                    <div class="price-card">
+                        <div class="title">INFRASTRUCTRE</div>
+                        <div class="price">
+                            <div class="dollars">Starting at</div>
+                            <div class="dollars">$15</div> 
+                            <div class="price-caption">Per host, per month*</div>
+                            </div>
+                        <div class="description">Centralize your monitoring
+                            of systems and services</div>
+                        <div class="bullets">
+                            <ul>
+                                <li>250+ integrations</li>
+                                <li>Out-of-the-box dashboards</li>
+                                <li>15-month metric retention</li>
+                            </ul>
+                        </div>
+                        <div class="details">See details</div>
+                        </div>
+                      
+                   
+                    <div class="price-card">
+                        <div class="title">INFRASTRUCTRE</div>
+                        <div class="price">
+                            <div class="dollars">Starting at</div>
+                            <div class="dollars">$15</div> 
+                            <div class="price-caption">Per host, per month*</div>
+                            </div>
+                        <div class="description">Centralize your monitoring
+                            of systems and services</div>
+                        <div class="bullets">
+                            <ul>
+                                <li>250+ integrations</li>
+                                <li>Out-of-the-box dashboards</li>
+                                <li>15-month metric retention</li>
+                            </ul>
+                        </div>
+                        <div class="details">See details</div>
+                        </div>
+                      
+                  
+                    <div class="price-card">
+                        <div class="title">INFRASTRUCTRE</div>
+                        <div class="price">
+                            <div class="dollars">Starting at</div>
+                            <div class="dollars">$15</div> 
+                            <div class="price-caption">Per host, per month*</div>
+                            </div>
+                        <div class="description">Centralize your monitoring
+                            of systems and services</div>
+                        <div class="bullets">
+                            <ul>
+                                <li>250+ integrations</li>
+                                <li>Out-of-the-box dashboards</li>
+                                <li>15-month metric retention</li>
+                            </ul>
+                        </div>
+                        <div class="details">See details</div>
+                        </div>
+                      
+                    </div>
                 </div>
             </div>
+            
             <div class="row row-2">
                 <div class="col-sm-6">
                     <div class="apm">
-                        <h4>APM</h4>
-                        <p>Get full visibility into modern applications</p>
+                        <img src="img/apm.svg" class="img-fluid" alt="Responsive image">
+                        <!-- <h4>APM</h4>
+                        <p>Get full visibility into modern applications</p> -->
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="infrastructure">
-                        <h4>Infrastructure</h4>
-                        <p>See across systems, apps, and services</p>
+                        <img src="img/infrastructure.svg" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
             </div>
             <div class="row row-3">
                 <div class="col-sm-6">
                     <div class="loss-management">
-                        <h4>Loss Management</h4>
-                        <p>Analyze and explore lo! data in context</p>
+                        <img src="img/loss.svg" class="img-fluid" alt="Responsive image">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -48,32 +118,30 @@
                         <p>With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack</p>
                     </div>
                 </div>
-            </div>
-            <div class="row row-4">
                 <div class="col-sm-6">
-                    <div class="brand-mosaic">
-                        <h4>AdRoll</h4>
-                        <p>“Datadog! has been instrumental in mana!in! our real-time infrastructure, !lobally distributed in 5 data centers across hundreds of instances, and thousands of different metrics and dimensions for each host. I can't believe there was a time when we didn't have Datadog!.” Valentino Volon"hi CHIEF TECHNOLOGY OFFICE#</p>
+                    <div class="adroll-image-contain">
+              
                     </div>
-                </div>
-                <div class="col-sm-6">
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100px";
+        function expandNav() {
+            document.getElementById("sidenav-js").style.width = "140px";
             document.getElementById("main").style.marginLeft = "100px";
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+            const main = document.getElementById("main");
+            document.getElementById("sidenav-js").style.width = "0";
+            main.style.marginLeft = "0";
+            main.style.width = "width: calc(100% - 90px);";
         }
         </script>
     <!-- <script src="scripts.js"></script> -->
 </body>
 
 </html>
+
