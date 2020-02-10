@@ -290,7 +290,7 @@ div.title.red {
   list-style: none;
   margin: 0;
   padding: 0;
-  box-shadow: 5px 7px 6px -1px rgba(0,0,0,0.12);
+  
 }
 
 .cards__item {
@@ -585,7 +585,6 @@ div.title.red {
   background-color: $gray-bg;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  box-shadow: 5px 7px 6px -1px rgba(0,0,0,0.12);
 }
 
 .observability a{
@@ -664,7 +663,6 @@ div.row:nth-child(2) > div:nth-child(2) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    box-shadow: 5px 7px 6px -1px rgba(0,0,0,0.12);
   }
 
   .grid__item {
