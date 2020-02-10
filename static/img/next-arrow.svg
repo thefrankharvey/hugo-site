@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="66px" viewBox="0 0 41 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.1%" y="-3.9%" width="108.3%" height="107.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DESKTOP-Copy-4" transform="translate(-1262.000000, -922.000000)">
+            <g id="Group-9" filter="url(#filter-1)" transform="translate(780.000000, 838.000000)">
+                <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="555" height="585"></rect>
+                <polyline id="Path-2" stroke="#000000" points="488 88 513.168851 113.168851 488 138.337702"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
