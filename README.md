@@ -1,5 +1,5 @@
 ## Summary
-This is my Jamstack site using Hugo, Bootstrap 4, and SCSS. I attempted to deploy this twice but the styles are not coming through.
+This is my Jamstack site using Hugo, Bootstrap 4, JS, and SCSS. I attempted to deploy this twice but the styles are not coming through.
 
 This stack is new to me so I spent a lot of time getting acquainted with the technologies so no more time was spent trying to deploy again.
 
